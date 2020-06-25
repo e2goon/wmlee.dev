@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
+import GlobalStyle from "../styles/global"
 import Header from "./header"
 import Footer from "./footer"
 
@@ -36,34 +37,6 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-const GlobalStyle = createGlobalStyle`
-  html {
-    font-size: 100%;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  a, input, button, textarea {
-    font: inherit;
-    color: inherit;
-  }
-
-  ::selection {
-    background: #d7dae8;
-  }
-`
 
 const Frame = styled.div`
   display: flex;
