@@ -15,3 +15,9 @@ date: "2020-06-25"
 ## 테스트2
 
 문단2
+
+## javascript code
+
+```js
+function() {}
+```

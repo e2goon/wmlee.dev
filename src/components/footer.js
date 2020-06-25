@@ -12,8 +12,8 @@ export default Footer
 
 const StyledFooter = styled.footer`
   margin: 24px auto;
-  max-width: 1024px;
   color: rgba(0, 0, 0, 0.4);
+  font-size: 80%;
   a {
     text-decoration: none;
   }

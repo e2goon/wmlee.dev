@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="프론트엔드 개발자 이원민입니다." />
+    <h2>최신 글</h2>
     {data.allMarkdownRemark.edges && (
       <ul>
         {data.allMarkdownRemark.edges.map(({ node }) => {
