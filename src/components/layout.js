@@ -22,11 +22,7 @@ const Layout = ({ children }) => {
     <Frame>
       <GlobalStyle />
       <Header title={data.site.siteMetadata.title} />
-      <Page>
-        <div className="inner">
-          <main>{children}</main>
-        </div>
-      </Page>
+      <Page>{children}</Page>
       <Footer />
     </Frame>
   )
@@ -41,23 +37,20 @@ export default Layout
 const Frame = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   background: #d7dae8;
   height: 100vh;
 `
 
-const Page = styled.div`
+const Page = styled.main`
   position: relative;
-  margin: 0 auto;
-  max-width: 1024px;
-  width: 100%;
+  padding: 24px;
+  min-width: 480px;
   max-height: 100%;
   border: 3px solid #000;
   border-radius: 12px;
   background: #fff;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
   overflow: auto;
-  > .inner {
-    padding: 24px;
-  }
 `
