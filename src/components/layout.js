@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
+import { rgba } from "polished"
 
 import GlobalStyle from "../styles/global"
 import Header from "./header"
@@ -45,12 +46,11 @@ const Frame = styled.div`
 
 const Page = styled.main`
   position: relative;
-  padding: 24px;
   min-width: 480px;
   max-height: 100%;
-  border: 3px solid #000;
-  border-radius: 12px;
   background: #fff;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
+  border: 1px solid ${rgba("#d7dae8", 0.2)};
+  border-radius: 12px;
   overflow: auto;
 `
