@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "wonmin, lee <e2goon@gmail.com>",
   "dependencies": {
+    "andromeda": "EliverLara/Andromeda",
     "gatsby": "^2.23.3",
     "gatsby-image": "^2.4.7",
     "gatsby-plugin-manifest": "^2.4.11",
@@ -11,7 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-styled-components": "^3.3.5",
-    "gatsby-remark-prismjs": "^3.5.6",
+    "gatsby-remark-vscode": "^2.1.2",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-remark": "^2.8.19",
     "gatsby-transformer-sharp": "^2.5.5",
