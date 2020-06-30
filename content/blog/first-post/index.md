@@ -19,5 +19,53 @@ date: "2020-06-25"
 ## javascript code
 
 ```js
-function() {}
+import { createGlobalStyle } from "styled-components"
 ```
+
+```js{1,3-5}
+this.isLine(1) // highlighted
+this.isLine(2)
+this.isLine(3) // highlighted
+this.isLine(4) // highlighted
+this.isLine(5) // highlighted
+```
+
+```jsx
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+function NotFoundPage() {
+  return (
+    <Layout>
+      <SEO title="404: Not found" />
+      <h1>404</h1>
+      <p>페이지가 없어요!</p>
+    </Layout>
+  )
+}
+
+export default NotFoundPage
+```
+
+```tsx
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+function NotFoundPage() {
+  return (
+    <Layout>
+      <SEO title="404: Not found" />
+      <h1>404</h1>
+      <p>페이지가 없어요!</p>
+    </Layout>
+  )
+}
+
+export default NotFoundPage
+```
+
+## inline code
+
+`$ yarn start`

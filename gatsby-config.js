@@ -41,7 +41,15 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: ["gatsby-remark-prismjs"],
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "Andromeda",
+              extensions: ["andromeda"],
+            },
+          },
+        ],
       },
     },
   ],

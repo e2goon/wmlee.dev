@@ -23,10 +23,24 @@ export const query = graphql`
 `
 
 const Post = styled.article`
+  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+
+  pre {
+    font-size: 86%;
+    font-weight: 500;
+  }
+
+  code {
+    font-family: "Fira Code", Segoe UI, Malgun Gothic, Consolas, "Courier New",
+      monospace;
+  }
+
   padding: 24px;
+
   > :first-of-type {
     margin-top: 0;
   }
+
   > :last-of-type {
     margin-top: 0;
   }
