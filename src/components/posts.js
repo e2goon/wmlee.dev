@@ -10,7 +10,7 @@ function Posts() {
         edges {
           node {
             id
-            excerpt(pruneLength: 30)
+            excerpt(pruneLength: 60)
             frontmatter {
               title
               date(fromNow: true, locale: "ko")
@@ -54,7 +54,18 @@ const List = styled.ul`
 `
 
 const Item = styled.li`
+  margin: 32px 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
+  overflow: hidden;
+  :first-of-type {
+    margin-top: 0;
+  }
+  :last-of-type {
+    margin-bottom: 0;
+  }
   strong {
     font-size: 140%;
   }

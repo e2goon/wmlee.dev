@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function BlogPost({ data }) {
   return (
     <Layout>
+      <SEO title={data.markdownRemark.frontmatter.title} />
       <Post dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     </Layout>
   )
@@ -23,7 +25,10 @@ export const query = graphql`
 `
 
 const Post = styled.article`
-  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
   pre {
     font-size: 86%;
