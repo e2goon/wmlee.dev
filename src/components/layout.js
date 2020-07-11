@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import { rgba } from "polished"
 
 import GlobalStyle from "../styles/global"
+import Helmet from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 
@@ -22,6 +22,25 @@ const Layout = ({ children }) => {
   return (
     <Frame>
       <GlobalStyle />
+      <Helmet
+        link={[
+          {
+            href:
+              "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap",
+            rel: "stylesheet",
+          },
+          {
+            href:
+              "https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap",
+            rel: "stylesheet",
+          },
+          {
+            href:
+              "https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap",
+            rel: "stylesheet",
+          },
+        ]}
+      />
       <Header title={data.site.siteMetadata.title} />
       <Page>{children}</Page>
       <Footer />
@@ -41,15 +60,12 @@ const Frame = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #d7dae8;
   min-height: 100vh;
 `
 
 const Page = styled.main`
   position: relative;
+  width: 100%;
+  max-width: 640px;
   max-height: 100%;
-  background: #fff;
-  box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
-  border: 1px solid ${rgba("#d7dae8", 0.2)};
-  border-radius: 12px;
 `

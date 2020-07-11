@@ -23,7 +23,10 @@ export const query = graphql`
 `
 
 const Post = styled.article`
-  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
   pre {
     font-size: 86%;

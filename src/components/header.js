@@ -24,12 +24,10 @@ Header.defaultProps = {
 export default Header
 
 const StyledHeader = styled.header`
-  @import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap");
-
   position: sticky;
   top: 0;
   padding: 24px 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   font-family: "Sulphur Point", sans-serif;
   text-align: center;
