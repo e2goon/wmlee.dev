@@ -25,7 +25,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background: #d7dae8;
+    background: lightyellow;
+    color: #000;
   }
 
   .sr-only {

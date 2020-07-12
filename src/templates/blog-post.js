@@ -25,10 +25,19 @@ export const query = graphql`
 `
 
 const Post = styled.article`
+  padding: 24px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
+  > :first-of-type {
+    margin-top: 0;
+  }
+
+  > :last-of-type {
+    margin-top: 0;
+  }
 
   pre {
     font-size: 86%;
@@ -40,13 +49,8 @@ const Post = styled.article`
       monospace;
   }
 
-  padding: 24px;
-
-  > :first-of-type {
-    margin-top: 0;
-  }
-
-  > :last-of-type {
-    margin-top: 0;
+  .grvsc-container {
+    --grvsc-border-radius: 0;
+    margin: 1rem -24px;
   }
 `
