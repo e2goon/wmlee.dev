@@ -1,17 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 
-const Footer = ({ title }) => (
+const Footer = () => (
   <StyledFooter>
-    <address>2020 &copy; wmlee.me</address>
+    <address>2020 &copy; wmlee.dev</address>
   </StyledFooter>
 )
 export default Footer
 
 const StyledFooter = styled.footer`
-  margin: 24px auto;
-  color: rgba(0, 0, 0, 0.4);
+  position: sticky;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: rgba(0, 0, 0, 1);
   font-size: 80%;
+  z-index: -1;
   a {
     text-decoration: none;
   }
