@@ -34,11 +34,7 @@ const Post = styled.article`
   color: #444;
   overflow: hidden;
 
-  > :first-of-type {
-    margin-top: 0;
-  }
-
-  > :last-of-type {
+  > *:first-child {
     margin-top: 0;
   }
 
@@ -57,7 +53,7 @@ const Post = styled.article`
   }
 
   pre {
-    font-size: 86%;
+    font-size: 0.82rem;
     font-weight: 500;
   }
 
@@ -68,7 +64,7 @@ const Post = styled.article`
 
   .grvsc-container {
     --grvsc-border-radius: 0;
-    margin: 1rem -24px;
+    margin: 1.25rem -24px;
   }
 
   @media (max-width: 768px) {
