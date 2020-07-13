@@ -16,7 +16,7 @@ date: "2020-06-25"
 
 문단2
 
-## javascript code
+## Javascript code
 
 ```js
 import { createGlobalStyle } from "styled-components"
@@ -66,6 +66,19 @@ function NotFoundPage() {
 export default NotFoundPage
 ```
 
-## inline code
+## Inline code
 
 `$ yarn start`
+
+## A collapsible
+
+<details>
+  <summary>Click to expand!</summary>
+
+### hi...
+
+```js
+function() {}
+```
+
+</details>
