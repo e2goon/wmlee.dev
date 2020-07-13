@@ -49,6 +49,12 @@ const GlobalStyle = createGlobalStyle`
       white-space: normal;
     }
   }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 90%;
+    }
+  }
 `
 
 export default GlobalStyle

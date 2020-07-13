@@ -29,6 +29,7 @@ const Post = styled.article`
   background: #fff;
   border-radius: 12px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
+  color: #444;
   overflow: hidden;
 
   > :first-of-type {
@@ -37,6 +38,16 @@ const Post = styled.article`
 
   > :last-of-type {
     margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    color: #000;
   }
 
   pre {
@@ -55,6 +66,12 @@ const Post = styled.article`
   }
 
   @media (max-width: 768px) {
+    padding: 24px 16px;
     border-radius: 0;
+
+    .grvsc-container {
+      --grvsc-border-radius: 0;
+      margin: 1rem -16px;
+    }
   }
 `
