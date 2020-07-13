@@ -8,7 +8,7 @@ import Helmet from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

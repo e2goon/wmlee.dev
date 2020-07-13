@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function BlogPost({ data }) {
+function BlogPost({ data }) {
   return (
     <Layout>
       <SEO title={data.markdownRemark.frontmatter.title} />
@@ -12,6 +12,8 @@ export default function BlogPost({ data }) {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query SitePostQuery($slug: String!) {
@@ -38,6 +40,10 @@ const Post = styled.article`
 
   > :last-of-type {
     margin-top: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   h1,

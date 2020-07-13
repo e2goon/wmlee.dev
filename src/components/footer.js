@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
-const Footer = () => (
-  <StyledFooter>
-    <address>2020 &copy; wmlee.dev</address>
-  </StyledFooter>
-)
+function Footer() {
+  return (
+    <StyledFooter>
+      <address>2020 &copy; wmlee.dev</address>
+    </StyledFooter>
+  )
+}
+
 export default Footer
 
 const StyledFooter = styled.footer`
