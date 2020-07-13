@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-const Header = ({ title }) => {
+function Header({ title }) {
   const data = useStaticQuery(graphql`
     query {
       profile: file(relativePath: { eq: "wmlee.png" }) {
@@ -19,9 +19,13 @@ const Header = ({ title }) => {
   return (
     <StyledHeader>
       <h1>
-        <Link to="/">WONMIN, LEE</Link>
+        <Link to="/">{title}</Link>
       </h1>
-      <Avatar fluid={data.profile.childImageSharp.fluid} alt="내 사진" />
+      <Avatar
+        fluid={data.profile.childImageSharp.fluid}
+        loading="eager"
+        alt="내 사진"
+      />
     </StyledHeader>
   )
 }

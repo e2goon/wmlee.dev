@@ -59,6 +59,7 @@ const Item = styled.li`
   border-radius: 12px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
+  color: #444;
   overflow: hidden;
   :first-of-type {
     margin-top: 0;
@@ -68,6 +69,8 @@ const Item = styled.li`
   }
   strong {
     font-size: 140%;
+    font-weight: normal;
+    color: #000;
   }
   small {
     margin-left: 8px;
@@ -85,5 +88,8 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   :focus {
     background: #efefef;
+  }
+  @media (max-width: 768px) {
+    padding: 16px;
   }
 `

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function BlogPost({ data }) {
+function BlogPost({ data }) {
   return (
     <Layout>
       <SEO title={data.markdownRemark.frontmatter.title} />
@@ -12,6 +12,8 @@ export default function BlogPost({ data }) {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query SitePostQuery($slug: String!) {
@@ -29,18 +31,29 @@ const Post = styled.article`
   background: #fff;
   border-radius: 12px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
+  color: #444;
   overflow: hidden;
 
-  > :first-of-type {
+  > *:first-child {
     margin-top: 0;
   }
 
-  > :last-of-type {
-    margin-top: 0;
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    color: #000;
   }
 
   pre {
-    font-size: 86%;
+    font-size: 0.82rem;
     font-weight: 500;
   }
 
@@ -51,10 +64,16 @@ const Post = styled.article`
 
   .grvsc-container {
     --grvsc-border-radius: 0;
-    margin: 1rem -24px;
+    margin: 1.25rem -24px;
   }
 
   @media (max-width: 768px) {
+    padding: 24px 16px;
     border-radius: 0;
+
+    .grvsc-container {
+      --grvsc-border-radius: 0;
+      margin: 1rem -16px;
+    }
   }
 `
