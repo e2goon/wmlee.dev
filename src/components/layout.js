@@ -61,6 +61,10 @@ const Frame = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 const Page = styled.main`
@@ -68,4 +72,8 @@ const Page = styled.main`
   width: 100%;
   max-width: 640px;
   max-height: 100%;
+
+  @media (max-width: 768px) {
+    max-width: none;
+  }
 `

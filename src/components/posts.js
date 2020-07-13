@@ -73,6 +73,10 @@ const Item = styled.li`
     margin-left: 8px;
     color: ${lighten(0.4, "#000")};
   }
+
+  @media (max-width: 768px) {
+    margin: 0 16px;
+  }
 `
 
 const StyledLink = styled(Link)`

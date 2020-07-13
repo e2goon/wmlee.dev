@@ -65,6 +65,11 @@ const StyledHeader = styled.header`
   small {
     font-size: 1.6rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem 24px;
+    font-size: 1.2rem;
+  }
 `
 
 const Avatar = styled(Image)`
@@ -73,4 +78,9 @@ const Avatar = styled(Image)`
   border-radius: 50%;
   box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 5rem;
+    height: 5rem;
+  }
 `

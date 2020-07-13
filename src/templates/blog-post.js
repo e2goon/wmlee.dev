@@ -53,4 +53,8 @@ const Post = styled.article`
     --grvsc-border-radius: 0;
     margin: 1rem -24px;
   }
+
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
 `
