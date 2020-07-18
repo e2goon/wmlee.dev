@@ -25,11 +25,7 @@ function Header() {
       <h1>
         <Link to="/">{data.site.siteMetadata.title}</Link>
       </h1>
-      <Avatar
-        fluid={data.profile.childImageSharp.fluid}
-        loading="eager"
-        alt="내 사진"
-      />
+      <Avatar fluid={data.profile.childImageSharp.fluid} alt="내 사진" />
     </StyledHeader>
   )
 }
