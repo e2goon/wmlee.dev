@@ -1,6 +1,6 @@
 ---
 title: "첫 포스팅"
-path: "/first-post"
+slug: "/first-post"
 date: "2020-06-25"
 ---
 

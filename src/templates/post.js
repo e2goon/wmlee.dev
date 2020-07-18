@@ -17,7 +17,7 @@ export default BlogPost
 
 export const query = graphql`
   query SitePostQuery($slug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
