@@ -14,7 +14,7 @@ function Posts() {
             frontmatter {
               title
               date(fromNow: true, locale: "ko")
-              path
+              slug
             }
           }
         }
@@ -30,7 +30,7 @@ function Posts() {
           {data.allMarkdownRemark.edges.map(({ node }) => {
             return (
               <Item key={node.id}>
-                <StyledLink to={node.frontmatter.path}>
+                <StyledLink to={node.frontmatter.slug}>
                   <strong>{node.frontmatter.title}</strong>
                   <small>{node.frontmatter.date}</small>
                   <br />

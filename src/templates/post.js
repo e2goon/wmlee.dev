@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/layout"
+import Layout from "../layouts/default"
 import SEO from "../components/seo"
 
 function BlogPost({ data }) {
@@ -17,7 +17,7 @@ export default BlogPost
 
 export const query = graphql`
   query SitePostQuery($slug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
@@ -53,7 +53,6 @@ const Post = styled.article`
   }
 
   pre {
-    font-size: 0.82rem;
     font-weight: 500;
   }
 
@@ -64,16 +63,15 @@ const Post = styled.article`
 
   .grvsc-container {
     --grvsc-border-radius: 0;
-    margin: 1.25rem -24px;
+    margin: 1.75rem -24px;
   }
 
   @media (max-width: 768px) {
     padding: 24px 16px;
-    border-radius: 0;
 
     .grvsc-container {
       --grvsc-border-radius: 0;
-      margin: 1rem -16px;
+      margin: 1.25rem -16px;
     }
   }
 `

@@ -1,12 +1,16 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import PropTypes from "prop-types"
 import styled from "styled-components"
 
-function Header({ title }) {
+function Header() {
   const data = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
       profile: file(relativePath: { eq: "wmlee.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -19,23 +23,11 @@ function Header({ title }) {
   return (
     <StyledHeader>
       <h1>
-        <Link to="/">{title}</Link>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
       </h1>
-      <Avatar
-        fluid={data.profile.childImageSharp.fluid}
-        loading="eager"
-        alt="내 사진"
-      />
+      <Avatar fluid={data.profile.childImageSharp.fluid} alt="내 사진" />
     </StyledHeader>
   )
-}
-
-Header.propTypes = {
-  title: PropTypes.string,
-}
-
-Header.defaultProps = {
-  title: ``,
 }
 
 export default Header
