@@ -9,9 +9,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, 'Noto Sans KR', Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-    background: #f0f1fa;
-  }
+    font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: ${props => props.backgroundColor || "#f0f1fa"};
 
   *,
   *::before,
