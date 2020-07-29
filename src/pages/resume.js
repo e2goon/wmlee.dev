@@ -611,7 +611,7 @@ const Badge = styled.span`
   line-height: 1;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: middle;
   border-radius: 0.25rem;
   background-color: #eee;
   color: #333;
@@ -657,8 +657,6 @@ const DetailsContent = styled.div`
 
 const Summary = styled.summary`
   position: relative;
-  display: flex;
-  align-items: center;
   padding-left: 1.2rem;
   outline: 0;
   line-height: 1;
@@ -680,5 +678,8 @@ const Summary = styled.summary`
   }
   ${Details}[open] &::before {
     transform: translateY(-50%) rotate(225deg);
+  }
+  ${Badge} {
+    margin-top: -2px;
   }
 `
