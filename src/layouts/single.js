@@ -32,11 +32,19 @@ export default SingleLayout
 const Frame = styled.div`
   font-size: 1.2rem;
   line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
-const Page = styled.main`
+const Page = styled.div`
   position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 640px;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
 `
