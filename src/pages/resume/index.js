@@ -66,7 +66,7 @@ function ResumePage() {
           다하며 기획, 디자인, 개발업무에서 겪는 반복 문제들을 목격하면 그냥
           지나치지 않고 해결하려고 노력합니다. 현재{" "}
           <strong>제 팀에서 컴포넌트 단위로 UI를 설계하고 개발하는 일</strong>을
-          하고 있으며 기본적으로 웹접근성, 웹표준을 준수하려 애씁니다.
+          하고 있으며 기본적으로 웹접근성, 웹표준을 준수하려고 노력합니다.
         </p>
       </header>
 
@@ -515,6 +515,18 @@ function ResumePage() {
             </li>
             <li>정보처리기능사</li>
             <li>컴퓨터그래픽스 운용기능사</li>
+          </ul>
+        </Section>
+
+        <Section>
+          <h2>연락처</h2>
+          <ul>
+            <li>
+              <a href="mailto:e2goon@gmail.com">e2goon@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/e2goon">https://github.com/e2goon</a>
+            </li>
           </ul>
         </Section>
       </main>
