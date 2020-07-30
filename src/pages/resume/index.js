@@ -3,8 +3,8 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { useKeenSlider } from "keen-slider/react"
-import Layout from "../layouts/single"
-import SEO from "../components/seo"
+import Layout from "layouts/single"
+import SEO from "components/seo"
 import "keen-slider/keen-slider.min.css"
 
 function ResumePage() {
