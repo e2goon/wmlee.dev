@@ -10,7 +10,7 @@ function Posts() {
         edges {
           node {
             id
-            excerpt(pruneLength: 60)
+            excerpt(pruneLength: 100, truncate: true)
             frontmatter {
               title
               date(fromNow: true, locale: "ko")
