@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../layouts/default"
 import SEO from "../components/seo"
+import { rgba } from "polished"
 
 function BlogPost({ data }) {
   return (
@@ -40,9 +41,9 @@ const Post = styled.article`
 
   h1 {
     font-size: 2rem;
+    color: #000;
   }
 
-  h1,
   h2,
   h3,
   h4,
@@ -52,18 +53,28 @@ const Post = styled.article`
     color: #000;
   }
 
-  pre {
-    font-weight: 500;
-  }
-
   code {
     font-family: "Fira Code", Segoe UI, Malgun Gothic, Consolas, "Courier New",
       monospace;
   }
 
+  summary {
+    cursor: pointer;
+  }
+
+  *:not(.grvsc-container) code {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+    background: ${rgba("#000", 0.1)};
+    border-radius: 4px;
+  }
+
   .grvsc-container {
     --grvsc-border-radius: 0;
     margin: 1.75rem -24px;
+    font-weight: 500;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 768px) {
