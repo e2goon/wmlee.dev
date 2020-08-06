@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Footer() {
   return (
     <StyledFooter>
-      <address>2020 &copy; wmlee.dev</address>
+      <address>2020 &copy; wmlee.netlify.app</address>
     </StyledFooter>
   )
 }
