@@ -33,8 +33,7 @@ function Posts() {
                 <StyledLink to={node.frontmatter.slug}>
                   <strong>{node.frontmatter.title}</strong>
                   <small>{node.frontmatter.date}</small>
-                  <br />
-                  <span>{node.excerpt}</span>
+                  <div>{node.excerpt}</div>
                 </StyledLink>
               </Item>
             )
@@ -56,9 +55,8 @@ const List = styled.ul`
 const Item = styled.li`
   margin: 32px 0;
   background: #fff;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
-  line-height: 1.6;
   color: #444;
   overflow: hidden;
   :first-of-type {
@@ -68,13 +66,15 @@ const Item = styled.li`
     margin-bottom: 0;
   }
   strong {
-    font-size: 140%;
-    font-weight: normal;
+    font-size: 1.4rem;
     color: #000;
   }
   small {
     margin-left: 8px;
     color: ${lighten(0.4, "#000")};
+  }
+  div {
+    margin-top: 0.4rem;
   }
 
   @media (max-width: 768px) {

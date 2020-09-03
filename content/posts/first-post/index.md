@@ -1,84 +1,39 @@
 ---
-title: "첫 포스팅"
-slug: "/first-post"
-date: "2020-06-25"
+title: "고민한 것, 하게된 것, 알게된 것"
+slug: "/thinking"
+date: "2020-09-04"
 ---
 
-# 첫 포스팅
+# 고민한 것, 하게된 것, 알게된 것
 
-마크다운으로 간단하게 작성해봤어요.
+- 5년 7개월이 넘도록 수많은 변화를 겪으며, 내 미래에 대해 진지하게 고민하기 시작
+- 변화를 주기 위해 동료의 제안을 받고 수원 **수원 프론트엔드 개발자 스터디** 활동 시작
+- 올해만 4군데 회사에서 모두 실무 면접 합격, 임원 면접 탈락을 겪음
+- 최근 가치관이 잘맞는 회사와 만났고, 필요한 기초 지식을 공부하고 있음
+- 디스코드 및 슬랙과 유사한 프로젝트를 진행하면서 WebRTC, XMPP를 알게 되었음
+- 매력적인 Atomic CSS 아키텍처와 tailwindcss를 가진 매력을 알게 되었음
 
-## 테스트1
+## 근황
 
-문단1
+- 진짜 너무 바쁨. 일정 준수를 하지 못하면 불이익이 발생할 것 같은 느낌이어서 항상 내일 해야할 일에 대한 걱정이 너무 크다보니 퇴근해도 메신저와 붙잡고 있어서 가족과 소통이 줄어들 때가 많았음. (미안해)
+- 최근 사무실에서 코로나 확진자가 발생하여 검사를 받고 재택하고 있으며 1주일간 자가격리중.
+- 처음으로 겪는 원격근무 시스템에 대한 준비가 미흡했고 경험이 없었음. 다만 불필요한 회의나 대면 협업이 줄어들면서 본연의 업무에 집중하는 횟수가 늘어났고 퍼포먼스가 잘나와서 흡족했음.
 
-## 테스트2
+## 토이 프로젝트
 
-문단2
+- **Gatsby**로 밑바닥부터 개인 블로그를 만들고 있음. **JBEE.io** 님의 블로그에 영향을 받아 가늘고 길게 학습하면서 이해도를 높이고 있음. 그 과정에서 **React, GraphQL**를 공부했고 여전히 깔짝대는 수준이고 많이 부족하다 느끼는 중이지만 이 부분또한 많이 다루고 공부 하다보면 숙련도가 올라갈 듯
+- **Prisma2** 기초지식 없이 백엔드와 프론트엔드를 한번에 공부하여 구상하고 있는 아이디어를 구현하려다 흐지부지 됨. 이 부분에 대해서는 **기본기 부족, 의지 부족, 동기부여 부족** 삼종 셋트로 포기. 일과 자기개발의 시간이 양립될 수 있을 때 쉽게 목표를 이룰 수 있는 단계부터 한번 시작해보기로 마음먹음.
+- **Vue**가 메인인 나에겐 **React**를 다뤄볼 수 있는 기회가 생겨 **수원 프론트엔드 개발자 스터디**의 동료들과 함께 워밍업 차원에서 [TodoMVC](http://todomvc.com/)와 [RealWorld](https://realworld.io/)를 같이 해보기로 함.
 
-## Javascript code
+## 앞으로의 학습 계획
 
-```js
-import { createGlobalStyle } from "styled-components"
-```
+올해 내로 반드시 익혀야하는, 당장 중요한 부분은 다음과 같다.
 
-```js{1,3-5}
-this.isLine(1) // highlighted
-this.isLine(2)
-this.isLine(3) // highlighted
-this.isLine(4) // highlighted
-this.isLine(5) // highlighted
-```
+1. React
+2. TypeScript
+3. Atomic CSS 아키텍처 (tailwindcss + CSS in JS)
+4. Motion (Animation)
 
-```jsx
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+앞으로 **React**와 **TypeScript**는 업무에서 많이 사용할 것 같기에 생산성을 높이려면 그만큼 숙련도를 높이는데 고민하면서 기본기를 많이 익혀야할 것 같다. **웹표준, 웹접근성, SEO, 성능최적화** 모든 분야에서 개선 하며 인터넷이 느린 환경에서도 문제 없이 페이지를 확인할 수 있도록 작업해야하는 업무를 맡게될 것 같다.
 
-function NotFoundPage() {
-  return (
-    <Layout>
-      <SEO title="404: Not found" />
-      <h1>404</h1>
-      <p>페이지가 없어요!</p>
-    </Layout>
-  )
-}
-
-export default NotFoundPage
-```
-
-```tsx
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-function NotFoundPage() {
-  return (
-    <Layout>
-      <SEO title="404: Not found" />
-      <h1>404</h1>
-      <p>페이지가 없어요!</p>
-    </Layout>
-  )
-}
-
-export default NotFoundPage
-```
-
-## Inline code
-
-`$ yarn start`
-
-## A collapsible
-
-<details>
-  <summary>Click to expand!</summary>
-
-### hi...
-
-```js
-function() {}
-```
-
-</details>
+최근 코로나로 인해 사람들과 대면하는 협업이 줄어들면서 재택업무에서 협업의 불편함들이 생겨나고 있고 그런 광경들을 수차례 목격하고 있다. 앞으로도 계속 **디자이너**와 **개발자**의 협업에서 많은 변화가 생길 것 같다. 직접 대면해야 해결할 수 있었던 요소들을 어떻게 하면 더 줄일 수 있는지 고민하게 될 듯하다.

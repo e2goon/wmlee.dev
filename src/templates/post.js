@@ -32,7 +32,7 @@ const Post = styled.article`
   background: #fff;
   border-radius: 12px;
   box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.2);
-  color: #444;
+  line-height: 1.8;
   overflow: hidden;
 
   > *:first-child {
@@ -51,6 +51,10 @@ const Post = styled.article`
   h6 {
     font-weight: normal;
     color: #000;
+  }
+
+  a {
+    color: blue;
   }
 
   code {
