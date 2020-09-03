@@ -69,10 +69,6 @@ const StyledHeader = styled.header`
   a {
     text-decoration: none;
     outline: none;
-    &:focus,
-    &:hover {
-      color: #333;
-    }
   }
   small {
     font-size: 1.6rem;
@@ -89,6 +85,13 @@ const Title = styled.h1`
   margin: 0;
   font-weight: bold;
   font-family: "Sulphur Point", sans-serif;
+  a {
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      -webkit-text-stroke: 1px #000;
+    }
+  }
 `
 
 const Icon = styled.span`
@@ -147,11 +150,11 @@ const AvatarLink = styled(Link)`
     transition: all 0.2s ease;
     z-index: 1;
   }
-  :hover ${Tooltip} {
+  :focus ${Tooltip}, :hover ${Tooltip} {
     margin-bottom: 2px;
     opacity: 1;
   }
-  :hover ${Avatar} {
+  :focus ${Avatar}, :hover ${Avatar} {
     transform: translate(1px, 1px);
     box-shadow: 8px 10px 15px ${rgba("#000", 0.2)};
   }
